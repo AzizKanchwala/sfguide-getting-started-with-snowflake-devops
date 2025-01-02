@@ -58,6 +58,7 @@ create or alter task vacation_spots_update
 
 -- task to select perfect vacation spot and send email with vacation plan
 -- NOTE: NOT ALL CORTEX ML MODELS MAY BE AVAILABLE ON ALL DEPLOYMENTS
+
 create or alter task email_notification
   warehouse = 'quickstart_wh'
   after vacation_spots_update
